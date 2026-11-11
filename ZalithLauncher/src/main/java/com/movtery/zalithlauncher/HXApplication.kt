@@ -54,7 +54,7 @@ import okio.Path.Companion.toOkioPath
 import kotlin.properties.Delegates
 
 @HiltAndroidApp
-class ZLApplication : Application(), SingletonImageLoader.Factory {
+class HXApplication : Application(), SingletonImageLoader.Factory {
     companion object {
         @JvmStatic
         var DEVICE_ARCHITECTURE by Delegates.notNull<Int>()
@@ -83,7 +83,7 @@ class ZLApplication : Application(), SingletonImageLoader.Factory {
                 Logger.error("AppCrash", "An exception occurred while saving the crash report", t)
             }
 
-            showLauncherCrash(this@ZLApplication, throwable, th !is SplashException)
+            showLauncherCrash(this@HXApplication, throwable, th !is SplashException)
             Process.killProcess(Process.myPid())
         }
 
@@ -109,7 +109,7 @@ class ZLApplication : Application(), SingletonImageLoader.Factory {
                 file = PathManager.FILE_CRASH_REPORT,
                 throwable = launchTh
             ) {
-                Log.w("ZLApplication", "An exception occurred while saving the crash report", it)
+                Log.w("HXApplication", "An exception occurred while saving the crash report", it)
             }
             showFatalError(this, launchTh)
         }

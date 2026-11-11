@@ -26,7 +26,7 @@ import androidx.annotation.Keep
 import androidx.compose.ui.unit.IntSize
 import com.movtery.zalithlauncher.BuildConfig
 import com.movtery.zalithlauncher.R
-import com.movtery.zalithlauncher.ZLApplication
+import com.movtery.zalithlauncher.HXApplication
 import com.movtery.zalithlauncher.bridge.LoggerBridge.appendInfo
 import com.movtery.zalithlauncher.bridge.LoggerBridge.appendTitle
 import com.movtery.zalithlauncher.bridge.ZLBridge
@@ -307,7 +307,7 @@ class GameLauncher(
 
         appendTitle("Launch Minecraft")
         appendInfo("Launcher version: ${BuildConfig.VERSION_NAME} (${BuildConfig.VERSION_CODE})")
-        appendInfo("Architecture: ${Architecture.archAsString(ZLApplication.DEVICE_ARCHITECTURE)}")
+        appendInfo("Architecture: ${Architecture.archAsString(HXApplication.DEVICE_ARCHITECTURE)}")
         appendInfo("Device model: ${Build.MANUFACTURER}, ${Build.MODEL}")
         appendInfo("API version: ${Build.VERSION.SDK_INT}")
         appendInfo("Renderer: ${renderer.getRendererName()}")

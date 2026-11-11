@@ -1060,4 +1060,5 @@
     <string name="hx_github">GitHub</string>
     <string name="hx_based_on_title">Basado en Zalith Launcher 2</string>
     <string name="hx_based_on_text">Versión modificada no oficial de Zalith Launcher 2, de MovTery y colaboradores, bajo licencia GPL-3.0.</string>
+    <string name="hx_contributor_omarrz14_text">Colaborador de HX Launcher. Ayudó en todo: diseño y arte, ícono y banner, temas y fuentes, controles personalizados, pruebas y soporte de la comunidad.</string>
 </resources>

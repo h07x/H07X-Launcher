@@ -62,7 +62,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import com.movtery.zalithlauncher.R
-import com.movtery.zalithlauncher.ZLApplication
+import com.movtery.zalithlauncher.HXApplication
 import com.movtery.zalithlauncher.context.getFileName
 import com.movtery.zalithlauncher.coroutine.Task
 import com.movtery.zalithlauncher.coroutine.TaskSystem
@@ -419,7 +419,7 @@ private fun JavaRuntimeItem(
                         )
                     }
                     runtime.arch?.let { arch ->
-                        val compatible = ZLApplication.DEVICE_ARCHITECTURE == Architecture.archAsInt(arch)
+                        val compatible = HXApplication.DEVICE_ARCHITECTURE == Architecture.archAsInt(arch)
                         Text(
                             text = arch.takeIf {
                                 compatible

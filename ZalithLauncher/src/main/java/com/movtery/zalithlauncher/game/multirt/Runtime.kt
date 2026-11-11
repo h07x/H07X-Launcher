@@ -17,7 +17,7 @@
  */
 package com.movtery.zalithlauncher.game.multirt
 
-import com.movtery.zalithlauncher.ZLApplication.Companion.DEVICE_ARCHITECTURE
+import com.movtery.zalithlauncher.HXApplication.Companion.DEVICE_ARCHITECTURE
 import com.movtery.zalithlauncher.utils.device.Architecture.archAsInt
 
 data class Runtime(

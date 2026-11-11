@@ -231,12 +231,7 @@ class MainActivity : BaseAppCompatActivity() {
             }
         }
 
-        //拉取当月赞助者数据
-        lifecycleScope.launch {
-            sponsorsViewModel.loadOnStart(
-                showLastMonth = GuideProgress.isPlayed(GuideKeys.Main) && !isImporting
-            )
-        }
+        //HX Launcher: los patrocinadores son del proyecto original (MovTery), no se cargan en esta versión
 
         //错误信息展示
         lifecycleScope.launch {
